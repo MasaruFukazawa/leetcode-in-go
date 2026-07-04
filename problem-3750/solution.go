@@ -9,9 +9,9 @@ func minimumFlips(n int) int {
 
 	for i, j := 0, len(binary_n)-1; i < j; i, j = i+1, j-1 {
 		if (binary_n[i] - '0') != (binary_n[j] - '0') {
-			counter+=2
+			counter += 2
 		}
-    }
+	}
 
-    return counter
+	return counter
 }
